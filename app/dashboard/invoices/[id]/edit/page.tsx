@@ -6,6 +6,12 @@ import EditInvoiceForm from '@/app/ui/invoices/edit-form'
 import { notFound } from 'next/navigation'
 import React from 'react'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Update Invoices'
+}
+
 export default async function Page(props: { params: Promise<{ id: string }> }) {
   const params = await props.params
   const id = params.id
