@@ -4,6 +4,7 @@
     "build": "next build",
     "dev": "next dev --turbopack",
     "start": "next start",
+    "lint": "next lint",
     "seed": "node -r config/dotenv ./app/seed/route.js"
   },
   "dependencies": {
